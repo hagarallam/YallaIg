@@ -1,0 +1,37 @@
+version: '3.8'
+
+name: yallaIG
+
+services:
+  codebase:
+    build:
+      dockerfile: docker/codebase/Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+      - mysql
+    networks:
+      - redis-network
+      - mysql-network
+  redis:
+    image: redis:latest
+    networks:
+      - redis-network
+    volumes:
+      - redis_data:/data
+  mysql:
+    build:
+      dockerfile: docker/mysql/Dockerfile
+    networks:
+      - mysql-network
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+  mysql_data:
+  redis_data:
+networks:
+  redis-network:
+    driver: bridge
+  mysql-network:
+    driver: bridge
