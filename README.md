@@ -1,6 +1,6 @@
 # YallaIg - IGCSE Learning Platform
 
-An all-in-one platform for IGCSE students to manage courses, access resources, and engage in community discussions.
+REST API for a platform for IGCSE students to manage courses, resources, and community interactions!
 
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.1.5-green)](https://spring.io/projects/spring-boot)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)](https://www.mysql.com/)
