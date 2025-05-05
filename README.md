@@ -46,7 +46,7 @@ An all-in-one platform for IGCSE students to manage courses, access resources, a
 - MySQL Database
 - Railway (Staging Deployment)
 
-## 🔍 API Documentation
+## API Documentation
 Explore interactive API docs:  
 [![Swagger UI](https://img.shields.io/badge/Swagger-UI-%23Clojure)](https://yallaig-production.up.railway.app/swagger-ui/index.html)
 
